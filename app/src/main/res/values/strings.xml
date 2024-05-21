@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scancer</string>
+    <string name="gallery">Gallery</string>
+    <string name="analyze">Analyze</string>
+    <string name="result">Analyze Result</string>
+    <string name="Author">Yondika Vio Landa</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="result_image">Result Image</string>
+    <string name="history">History</string>
+</resources>
