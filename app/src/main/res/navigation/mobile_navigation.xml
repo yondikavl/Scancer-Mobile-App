@@ -22,4 +22,10 @@
         android:name="com.yondikavl.scancer.ui.news.NewsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_result"
+        android:name="com.yondikavl.scancer.ui.result.ResultFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_result" />
 </navigation>

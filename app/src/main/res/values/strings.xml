@@ -7,4 +7,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_history">History</string>
     <string name="title_news">News</string>
+    <string name="gallery">Galeri\n</string>
+    <string name="analyze">Analisis</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="result_image">Hasil Analisis</string>
+    <string name="result">Hasil</string>
 </resources>

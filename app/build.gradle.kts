@@ -35,6 +35,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        mlModelBinding = true
     }
 }
 
@@ -59,4 +60,8 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
 
     implementation("app.juky:squircleview:0.6.1")
+
+    implementation("org.tensorflow:tensorflow-lite-support:0.1.0")
+    implementation("org.tensorflow:tensorflow-lite-metadata:0.1.0")
+    implementation("org.tensorflow:tensorflow-lite-task-vision:0.1.0")
 }

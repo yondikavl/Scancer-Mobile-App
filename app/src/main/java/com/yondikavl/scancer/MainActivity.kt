@@ -8,6 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.yondikavl.scancer.databinding.ActivityMainBinding
+import com.yondikavl.scancer.ui.result.ResultFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,10 +27,18 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_history, R.id.navigation_news
+                R.id.navigation_home, R.id.navigation_history, R.id.navigation_news, R.id.navigation_result
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
+    fun showResultFragment(imageUri: String, label: String, confidence: Float) {
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.nav_host_fragment_activity_main, ResultFragment.newInstance(imageUri, label, confidence))
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
+    }
+
 }
